@@ -7,7 +7,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebConfig {
-
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
@@ -16,6 +15,7 @@ public class WebConfig {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
                             "https://portfofia.web.app",
+                            "https://portfove.vercel.app",
                             "http://localhost:3000",
                             "http://localhost:5500"
                         )
