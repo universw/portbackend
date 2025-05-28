@@ -12,7 +12,7 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
-                            "https://portfofia.web.app",
+                            "https://portfo-38945.web.app/",
                             "http://localhost:3000",
                             "http://localhost:5500"
                         )
